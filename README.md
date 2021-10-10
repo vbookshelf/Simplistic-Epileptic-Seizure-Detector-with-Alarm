@@ -1,4 +1,4 @@
-### Simplistic-Epileptic-Seizure-Detector-with-Alarm
+## Simplistic-Epileptic-Seizure-Detector-with-Alarm
 
 (UNDER CONSTRUCTION)
 
@@ -37,15 +37,15 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 These resources will help you understand what 
 the Python and Arduino code is doing.
 
+Latest Pose Estimation Realtime (24 FPS) using CPU | Computer Vision | OpenCV Python 2021<br>
+https://www.youtube.com/watch?v=brwgBf6VB0I
+
 Arduino - Send Commands with Serial Communication<br>
 https://www.youtube.com/watch?v=utnPvE8hN3o
 
 Arduino - Bidirectional Serial Communication with Raspberry Pi<br>
 (It doesn't have to be a Raspberry Pi. It could also be a pc or laptop.)<br>
 https://www.youtube.com/watch?v=OJtpA_qTNL0
-
-Latest Pose Estimation Realtime (24 FPS) using CPU | Computer Vision | OpenCV Python 2021<br>
-https://www.youtube.com/watch?v=brwgBf6VB0I
 
 Google Mediapipe Pose detection <br>
 https://google.github.io/mediapipe/solutions/pose
