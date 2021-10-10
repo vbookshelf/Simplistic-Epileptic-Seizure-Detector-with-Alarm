@@ -23,9 +23,11 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 
 <br>
 
-3- We apply the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
+3- This appraoch applies the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
 
 ### Alternative Approaches
+
+These are a few alternative ways to approach this problem:
 
 1- Create a trigger word detection system that will detect the Epileptic Cry. This is the same approach as the well knpw trigger words "Hey Google" and "Hey Siri".<br>
 2- Train a model to detect seizure poses in the same way that models are trained to detect sign language hand signs. If this system was being created to be used to monitor just one person then the training image data could be created from seizure videos of that person.
