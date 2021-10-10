@@ -8,7 +8,7 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 
 ### How this works
 
-1- Google MediaPipe has a Pose detector that outputs 32 keypoints for different locations on the body. The model runs on a CPU. This is an example:
+1- Google MediaPipe has a Pose detector that outputs 32 keypoints for different locations on the body. Each keypoint has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/key-points.png" width="300"></img>
@@ -23,7 +23,7 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 
 <br>
 
-3- We apply the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having and seizure. A signal is sent from the python code running on the laptop to the Arduino using serial communication. This triggers an alarm.
+3- We apply the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having and seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
 
 ### Alternative Approaches
 
