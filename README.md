@@ -23,7 +23,7 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 
 <br>
 
-3- We apply the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having and seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
+3- We apply the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
 
 ### Alternative Approaches
 
