@@ -1,6 +1,6 @@
 ## Simplistic Epileptic Seizure Detector with Alarm
 
-This project demonstrates a simplistic way to use a MediaPipe Pose model with a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is having an epileptic seizure. When a seizure is detected, the system triggers an audible alarm to call for help.
+This project demonstrates a simplistic way to use a MediaPipe Pose model with a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is having an epileptic seizure. When a seizure is detected the system triggers an audible alarm to call for help.
 
 Someone with greater knowledge of epileptic seizures could use this basic workflow as a starting point to create a more sophisticated seizure detector.
 
@@ -10,7 +10,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 ### How this works
 
-1- Google MediaPipe has a Pose model that outputs 32 landmarks for different locations on the body. Each keypoint has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
+1- Google MediaPipe has a Pose model that outputs 32 body landmarks. Each landmark has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/key-points.png" width="300"></img>
@@ -32,7 +32,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 <br>
 
-3- This approach applies the MediaPipe Pose model to the real-time video feed of the person being monitored. When the y coordinate of the hip landmarks are found to be above the shoulder landmarks the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
+3- This solution applies the MediaPipe Pose model to the video feed of the person being monitored. When the y coordinate of the hip landmarks are found to be above the shoulder landmarks the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
 
 ### Alternative Approaches
 
@@ -87,7 +87,7 @@ These instructions are for Mac OSX but the process to run a python file in Windo
 1- Connect your Arduino to a USB port on your laptop.<br>
 2- Connect the Piezo Buzzer as shown on the wiring diagram.<br>
 3- Upload the arduino-sketch folder to your Arduino.<br>
-4- Change the port variable in the arduino-finger-counter.py file to match the port you are using. The steps to do this are described in the detect-pose-from-video.py file.<br>
+4- Change the port variable in the detect-pose-from-video.py file to match the port you are using. The steps to do this are described in the detect-pose-from-video.py file.<br>
 
 5- On the command line: Navigate to the folder containing the detect-pose-from-video.py file.<br>
 6- On the command line type: python detect-pose-from-video.py<br>
