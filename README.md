@@ -68,4 +68,38 @@ Epilepsy and Seizures<br>
 Increasing Epilepsy Awareness<br>
 https://miamineurosciencecenter.com/en/conditions/epilepsy/
 
+<br>
+
+## How to run this project 
+
+These instructions are for Mac OSX but the process to run a python file in Windows should be similar.
+
+1- Connect your Arduino to a USB port on your laptop.<br>
+2- Connect the Piezo Buzzer as shown on the wiring diagram.<br>
+3- Upload the arduino-sketch folder to your Arduino.<br>
+4- Change the port variable in the arduino-finger-counter.py file to match the port you are using. The steps to do this are described in the detect-pose-from-video.py file.<br>
+
+5- On the command line: Navigate to the folder containing the detect-pose-from-video.py file.<br>
+6- On the command line type: python detect-pose-from-video.py<br>
+7- A window will open showing what your webcam is seeing.<br>
+
+8- Point the webcam to a place where you can lie down e.g. a couch or bed.<br>
+9- Lie down on your back.<br>
+10- When you look at the screen you will see that 0 is shown indicating that no seizure has been detected.<br>
+
+11- As you lie on your back, raise your hips.<br>
+12- The status shown on the screen will change to 1 and the alarm will be triggered.<br>
+13- Press the reset button on the Arduino to silence the alarm.<br>
+14- Press q on the keyboard to close the webcam window.<br>
+
+## Packages
+
+These are the packages that I used:
+
+- Python 3.7.0
+- OpenCV
+- numpy==1.21.2
+- mediapipe==0.8.7.3
+- pyserial==3.5
+
 
