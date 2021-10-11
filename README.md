@@ -8,11 +8,18 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 ### How this works
 
-1- Google MediaPipe has a Pose detector that outputs 32 keypoints for different locations on the body. Each keypoint has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
+1- Google MediaPipe has a Pose model that outputs 32 landmarks for different locations on the body. Each keypoint has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/key-points.png" width="300"></img>
 <i>Image by Ben Weber on Unsplash</i><br>
+<br>
+
+
+
+<br>
+<img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/pose-landmarks.png" width="600"></img>
+<i>Source:</i> https://google.github.io/mediapipe/solutions/pose<br>
 <br>
 
 2- By doing a quick Google search I learned that there are different types of seizures. During some seizures the person's body goes into the position shown in the figure below. You will note that the shoulders are below the hips.
@@ -23,7 +30,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 <br>
 
-3- This appraoch applies the MediaPipe pose detection model to the real-time video feed of the person being monitored. When the y coordinate of the hip keypoints are found to be above the shoulder keypoints the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
+3- This approach applies the MediaPipe Pose model to the real-time video feed of the person being monitored. When the y coordinate of the hip landmarks are found to be above the shoulder landmarks the system infers that the person is having a seizure. A signal is then sent from the python code, running on the laptop, to the Arduino. This triggers an alarm.
 
 ### Alternative Approaches
 
