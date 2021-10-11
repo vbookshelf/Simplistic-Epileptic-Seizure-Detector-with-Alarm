@@ -1,10 +1,12 @@
 ## Simplistic Epileptic Seizure Detector with Alarm
 
-(UNDER CONSTRUCTION)
-
 This project demonstrates a simplistic way to use MediaPipe Pose model with a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is having an epileptic seizure. When the seizure is detected, the system triggers an audible alarm to call for help.
 
 Someone with greater knowledge of epileptic seizures could use this basic workflow as a starting point to create a more sophisticated seizure detector.
+
+<br>
+<img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/hardware.jpg" width="400"></img>
+<br>
 
 ### How this works
 
