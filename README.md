@@ -36,7 +36,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 ### Alternative Approaches
 
-This solution, using body keypoint locations, is not robust. Here are a few alternative ways to approach this problem:
+This solution is not robust. Here are a few alternative ways to approach this problem:
 
 1- Train a trigger word detection model to detect the Epileptic Cry. "Hey Google" and "Hey Siri" are examples of well known trigger words.<br>
 2- Train a model to detect seizure poses in the same way that models are trained to detect deaf sign language signs or to differentiate between cats and dogs.<br>
