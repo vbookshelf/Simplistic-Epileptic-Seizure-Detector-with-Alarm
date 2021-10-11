@@ -1,4 +1,4 @@
-## Simplistic-Epileptic-Seizure-Detector-with-Alarm
+## Simplistic Epileptic Seizure Detector with Alarm
 
 (UNDER CONSTRUCTION)
 
