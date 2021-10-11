@@ -2,9 +2,9 @@
 
 (UNDER CONSTRUCTION)
 
-This project demonstrates a simplistic way to use MediaPipe pose detection, a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is experiencing an epileptic seizure. When the seizure is detected, the system triggers an audible alarm to call for help.
+This project demonstrates a simplistic way to use MediaPipe Pose detection, a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is experiencing an epileptic seizure. When the seizure is detected, the system triggers an audible alarm to call for help.
 
-Someone with greater knowledge of epileptic seizures could use this basic approach as a starting point to create a more sophisticated seizure detector.
+Someone with greater knowledge of epileptic seizures could use this basic workflow as a starting point to create a more sophisticated seizure detector.
 
 ### How this works
 
@@ -27,10 +27,10 @@ Someone with greater knowledge of epileptic seizures could use this basic approa
 
 ### Alternative Approaches
 
-These are a few alternative ways to approach this problem:
+These are two alternative ways to approach this problem:
 
-1- Create a trigger word detection system that will detect the Epileptic Cry. This is the same approach as the well knpw trigger words "Hey Google" and "Hey Siri".<br>
-2- Train a model to detect seizure poses in the same way that models are trained to detect sign language hand signs. If this system was being created to be used to monitor just one person then the training image data could be created from seizure videos of that person.
+1- Create a trigger word detection system to detect the Epileptic Cry. "Hey Google" and "Hey Siri" are examples of well known trigger words.<br>
+2- Train a model to detect seizure poses in the same way that models are trained to detect deaf sign language signs.
 
 <br>
 
