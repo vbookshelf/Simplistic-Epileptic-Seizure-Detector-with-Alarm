@@ -15,7 +15,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 <i>Image by Ben Weber on Unsplash</i><br>
 <br>
 
-2- There are different types of seizures. But during some seizures the person's body goes into the position shown in the figure below. You will note that the shoulders are below the hips.
+2- By doing a quick Google search I learned that there are different types of seizures. During some seizures the person's body goes into the position shown in the figure below. You will note that the shoulders are below the hips.
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/seizure-pose.png" width="400"></img>
