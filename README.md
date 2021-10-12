@@ -2,7 +2,7 @@
 
 This project demonstrates a simplistic way to use a MediaPipe Pose model with a laptop, a laptop webcam, an Arduino and a piezoelectric buzzer to automatically detect when a person is having an epileptic seizure. When a seizure is detected the system triggers an audible alarm to call for help.
 
-Someone with greater knowledge of epileptic seizures could use this basic workflow as a starting point to create a more sophisticated seizure detector.
+Someone with specialized knowledge of epileptic seizures and  access to audio or image training data, could use this basic workflow as a starting point to create a more sophisticated seizure detector. Maybe it could even be possible to create a system to warn a person of an impending seizure. This could be especially useful if a person is driving.
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/hardware.jpg" width="400"></img>
@@ -10,7 +10,7 @@ Someone with greater knowledge of epileptic seizures could use this basic workfl
 
 ### How this works
 
-1- Google MediaPipe has a Pose model that outputs 32 body landmarks. Each landmark has an x,y coordinate with the origin (0,0) in the top left corner of the image. The model runs on a CPU. This is an example of the output:
+1- Google MediaPipe has a Pose model that outputs 32 body landmarks. Each landmark has an (x,y,z) coordinate. The model runs on a CPU. This is an example of the output:
 
 <br>
 <img src="https://github.com/vbookshelf/Simplistic-Epileptic-Seizure-Detector-with-Alarm/blob/main/images/key-points.png" width="300"></img>
