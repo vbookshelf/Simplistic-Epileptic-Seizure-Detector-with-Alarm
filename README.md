@@ -41,6 +41,7 @@ This solution is not robust. Here are a few alternative ways to approach this pr
 1- Train a trigger word detection model to detect the Epileptic Cry. "Hey Google" and "Hey Siri" are examples of well known trigger words.<br>
 2- Train a model to detect seizure poses in the same way that models are trained to detect deaf sign language signs or to differentiate between cats and dogs.<br>
 3- Train a model to detect a seizure facial expression - in the same way that models are trained to detect emotional facial expressions like "happy" and "sad".
+4- Use MediaPipe Pose and MediaPipe Face Mesh to extract face and body landmarks when a seizure is occuring and when it isn't. Then use this to train a neural network to classify each row of data as either "seizure" or "no seizure".
 
 <br>
 
